@@ -10,6 +10,9 @@ upstream:
   version:
     type: github_release
     repo: team-spotube/spotube
+    require_assets:
+      - asset: '^Spotube\-linux\-x86_64\.deb$'
+      - asset: '^Spotube\-linux\-aarch64\.deb$'
   notes:
     type: github_release
     repo: team-spotube/spotube
